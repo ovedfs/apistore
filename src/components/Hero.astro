@@ -1,0 +1,8 @@
+---
+const {image, legend} = Astro.props
+---
+
+<section class="relative">
+  <img class="h-[400px] w-full object-cover" src={image} alt="">
+  <p class="absolute bottom-2 text-amber-300 bg-slate-500/50 w-full text-center p-4">{legend}</p>
+</section>

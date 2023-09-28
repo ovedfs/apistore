@@ -1,0 +1,23 @@
+<header class="bg-sky-600 text-white flex flex-col md:flex-row md:justify-between">
+  <div class="flex justify-between p-2">
+    <a class="text-amber-200 hover:text-amber-400 text-2xl font-semibold" href="/">FisoStore</a>
+    <button class="btn-menu border px-2 rounded-lg hover:bg-sky-800 md:hidden">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+  <nav class="nav flex flex-col bg-sky-800 h-0 overflow-hidden md:flex-row md:bg-inherit md:h-full">
+    <a class="hover:bg-slate-500 p-2" href="/">Home</a>
+    <a class="hover:bg-slate-500 p-2" href="/about">About</a>
+    <a class="hover:bg-slate-500 p-2" href="/contact">Contact</a>
+  </nav>
+</header>
+
+<script>
+  const btnMenu = document.querySelector('.btn-menu')
+  const nav = document.querySelector('.nav')
+
+  btnMenu.addEventListener('click', () => {
+    nav.classList.toggle('h-0')
+    nav.classList.toggle('overflow-hidden')
+  })
+</script>
