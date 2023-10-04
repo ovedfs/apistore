@@ -19,5 +19,11 @@
   btnMenu.addEventListener('click', () => {
     nav.classList.toggle('h-0')
     nav.classList.toggle('overflow-hidden')
+
+    if(nav.classList.contains('h-0')) {
+      btnMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`
+    } else {
+      btnMenu.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+    }
   })
 </script>

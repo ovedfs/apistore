@@ -1,0 +1,10 @@
+---
+const {title, thumbnail, description, price} = Astro.props.product
+---
+
+<article class="border rounded-xl p-4">
+  <img class="h-[300px] w-full object-cover" src={thumbnail} alt="">
+  <h3 class="text-2xl font-semibold text-center py-4 text-sky-700">{title}</h3>
+  <p>{description}</p>
+  <p class="bg-slate-100 mt-4 rounded-xl p-4 text-center text-2xl text-green-500 font-semibold">$ {price.toFixed(2)}</p>
+</article>
